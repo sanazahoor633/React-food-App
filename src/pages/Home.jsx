@@ -63,7 +63,7 @@ const Home = () => {
             id={item.id}
             type={item.food_type}
           />
-        )) : <div>no Dish Found</div> }
+        )) : <div className="pt-10 text-green-600 text-2xl font-semibold">No Dish Found</div> }
       
       </div>
 
@@ -122,7 +122,7 @@ const Home = () => {
   <button className='w-[80%] bg-green-700 hover:bg-green-400 p-2 text-white rounded-md text-xl tracking-tighter transition-all duration-500' onClick={()=>{toast.success('Order placed') }} >Place Order</button>
 
 
-</> : <div>Empty</div> }
+</> : <div className="pt-10 text-green-600 text-2xl font-semibold">Empty</div> }
        
 
       </div>
